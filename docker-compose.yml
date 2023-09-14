@@ -1,0 +1,9 @@
+services:
+  front:
+    build: .
+    volumes:
+      - ./:/var/www/frontend
+    networks:
+      - p_front_network
+networks:
+  p_front_network:
