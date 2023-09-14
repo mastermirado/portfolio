@@ -3,6 +3,7 @@ services:
     build: .
     volumes:
       - ./:/var/www/frontend
+      - /var/www/frontend/node_modules
     networks:
       - p_front_network
 networks:
