@@ -17,7 +17,10 @@ const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 const vuetify = createVuetify({
     components,
     directives,
-  })
+    theme: {
+        defaultTheme: 'dark'
+    }
+})
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
